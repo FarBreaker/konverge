@@ -1,0 +1,36 @@
+# Source files
+src/
+test/
+
+# Development files
+.kiro/
+tsconfig.json
+jest.config.js
+
+# Build artifacts
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+
+# Temporary folders
+tmp/
+temp/
+
+# Git
+.git/
+.gitignore

@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const path = require('path');
+
+// For global installations, we should always have the built version
+const libPath = path.join(__dirname, '..', 'lib');
+
+try {
+  // Try to load the built CLI and run it
+  const { main } = require(path.join(libPath, 'cli', 'index.js'));
+  main().catch((error) => {
+    console.error('Unexpected error:', error);
+    process.exit(1);
+  });
+} catch (e) {
+  console.error('Error: Konverge CLI not found. This usually means the package was not built properly.');
+  console.error('If you\'re developing locally, run: npm run build');
+  console.error('If you installed globally, try reinstalling: npm install -g konverge');
+  console.error('\nDetailed error:', e.message);
+  process.exit(1);
+}

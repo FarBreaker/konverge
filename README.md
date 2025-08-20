@@ -88,46 +88,6 @@ new MyStack(app, 'MyStack');
 - `konverge init [--name <name>] [--force]` - Initialize a new project
 - `konverge synth` - Synthesize Kubernetes YAML from your TypeScript code
 
-## Publishing to NPM
-
-To publish this package to NPM:
-
-1. Build and test the package:
-   ```bash
-   npm run build
-   npm test
-   ```
-
-2. Update the version in package.json:
-   ```bash
-   npm version patch  # or minor/major
-   ```
-
-3. Publish to NPM:
-   ```bash
-   npm publish
-   ```
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Build the project
-npm run build
-
-# Run tests
-npm test
-
-# Watch mode for development
-npm run watch
-
-# Test the CLI locally
-npm link
-konverge --help
-```
-
 ## Project Status
 
 This project is currently in development. The core framework has been implemented, with Kubernetes constructs and CLI tools coming in subsequent phases.
