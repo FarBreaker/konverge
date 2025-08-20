@@ -1,6 +1,6 @@
 {
   "name": "konverge",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "TypeScript-based tool for defining Kubernetes infrastructure as code",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/konverge.git"
+    "url": "https://github.com/FarBreaker/konverge.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/konverge/issues"
+    "url": "https://github.com/FarBreaker/konverge/issues"
   },
-  "homepage": "https://github.com/your-username/konverge#readme",
+  "homepage": "https://github.com/FarBreaker/konverge#readme",
   "engines": {
     "node": ">=16.0.0"
   },

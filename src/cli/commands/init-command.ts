@@ -119,7 +119,7 @@ export class InitCommand extends BaseCommand {
   private async generatePackageJson(projectDir: string, projectName: string): Promise<void> {
     const packageJson = {
       name: projectName,
-      version: '0.1.3',
+      version: '0.1.4',
       description: 'A Konverge application',
       main: 'lib/app.js',
       scripts: {
